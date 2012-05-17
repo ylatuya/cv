@@ -1,0 +1,131 @@
+%% start of file `andoni_cv.tex'.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+%\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\sfdefault}{verdana}
+%\nopagenumbers{}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+%\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+\setlength{\hintscolumnwidth}{4cm}
+%\setlength{\maketitlenamewidth}{10cm}
+
+% personal data
+\firstname{Andoni}
+\familyname{Morales Alastruey}
+\title{Curriculum vitae}
+\address{Carretera de Húmera 80 chalet 8}{28224 Madrid}
+\mobile{+34 60642682}
+%\phone{phone (optional)}
+%\fax{fax (optional)}
+\email{ylatuya@gmail.com}
+\homepage{www.ylatuya.es}
+%\extrainfo{additional information (optional)}
+\photo[64pt]{andoni.jpg}
+%\quote{Some quote (optional)}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2002--2009}{Telecommunications Engineer}{Universidad Politécnica}{Madrid}
+        {\textit{Master's degree (ABET accreditation)}}{}
+\cventry{2007--2008}{Erasmus}{Ingegneria delle Telecomunicazioni, Sapienza}{Roma}
+        {\textit{Master thesis}}{}
+
+\section{Master thesis}
+\cvline{title}{\emph{LongoMatch: a sports video analysis tool based on Free Software}}
+\cvline{supervisors}{Massimo Mecella}
+\cvline{description}{\small LongoMatch is a multi-platform Open Source software for performance
+ analysis through video. It's written in C\# with Mono, using GStreamer for the multimedia
+ backend and GTK+ for the UI}
+
+\section{Bio/Skills}
+\cvline{Learning to code}{I learned to code on my own reading the manual of a TI-82 graphing
+ calculator at the age of 16, where I wrote my first program: a Hangman game. Then I started
+ my studies as a telecommunications engineer learning the basics of software engineering
+ using Java.}
+\cvline{Starting a big project}{At some point I felt the need of starting a new project to
+ improve my coding skills, learn a new language and discover the challenges of starting a
+ big project from scratch. So I started LongoMatch, a Free Software project for sports
+ performance analysis through video. LongoMatch has kept me entertained on my free time,
+ discovering all the phases of the software development: design, development, releasing and
+ packaging and maintaining an online community.}
+\cvline{The Free Software community}{With LongoMatch I started being involved in the Free Software
+ community, specially in the GStreamer project. I started GStreamer WinBuilds, a project parallel
+ to GStreamer to provide pre-compiled binaries of GStreamer on Windows and LongoMatch was one of
+ the first projects to use GStreamer on this OS.}
+\cvline{Professional Experience}{}
+
+\section{Experience}
+\cventry{Feb 2012--current}{Senior Multimedia Engineer}{Fluendo}{Barcelona-Madrid}{}{Design and development of multimedia solutions based on GStreamer.\newline{}%
+\begin{itemize}%
+\item Development of a SDK for the GStreamer project;
+  \begin{itemize}%
+  \item Design and development of Cerbero, a multi-platform build system for the SDK;
+  \item Native packaging of the SDK for Linux, Windows and OSX;
+  \item Integration of the SDK with IDE's such as Visual Studio and XCode;
+  \end{itemize}
+\end{itemize}}
+\cventry{Oct 2009--Jan 2012}{Software Engineer}{Flumotion}{Barcelona}{}{Development and maintenance of Flumotion's streaming server and streaming platform.\newline{}
+  \begin{itemize}%
+  \item Flumotion Open Source streaming server;
+    \begin{itemize}%
+    \item Development of new features and bug fixing;
+      \begin{itemize}%
+        \item Development of new features and bugfixing;
+        \item Development of new features and bugfixing;
+      \end{itemize}
+    \item Management of the community;
+    \item Native packaging of the SDK for Linux, Windows and OSX;
+    \item Integration of the SDK with IDE's such as Visual Studio and XCode;
+    \end{itemize}
+  \end{itemize}}
+\cventry{Dec 2008--Jul 2009}{Internship}{Telefónica I+D}{Madrid}{}{Development and maintenance of Flumotion's streaming server and streaming platform.\newline{}}
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{mother tongue}{}
+\cvitemwithcomment{French}{mother tongue}{I lived for 6 years in France and continued studying at the Licée Français de Murcie}
+\cvitemwithcomment{English}{fluent}{English has been the communication language used during my work experience and while interacting with the community of Open Source projects}
+\cvitemwithcomment{Italian}{fluent}{I lived one year in Rome assisting courses to the University and playing for an Italian field hockey team}
+
+\section{Computer skills}
+\cvdoubleitem{Languages}{C, C\#, Python, Java}{Revision Control}{svn, git}
+\cvdoubleitem{GNU build system}{autotools, gcc, makefiles, libtool}{Projects management}{Bugzilla, Trac, Redmine, Pivotal, Gerrit, Launchpad}
+\cvdoubleitem{Frameworks}{GStreamer, GTK+, Twisted}{Development methodologies}{Scrum, Kanban}
+\cvdoubleitem{Multimedia}{Codecs (H264, VP8), Muxers(Matroska, MP4, OGG, FLV)}{Video streaming}{HTTP streaming, Adaptive Streaming}
+\cvitem{Others}{Multi-plaform design, distributed and scalable systems, databases}
+
+\section{Interests}
+\cvitem{Hacking}{Although I'm now working as a software developer, hacking has been my great passion. On my free time I love contributing to Free Software projects.}
+\cvitem{Field Hockey}{I have been a semi-professional hockey player for the past years, playing in the Spanish top division and for the Spanish national team in U16, U18 and U21 categories.}
+\cvitem{Sky/Kitesurf/Longboard}{In winter I like skying, kitesurfing in summer and riding my longboard when I have some spare time.}
+\cvitem{Music}{Listening to new groups and going to music concerts and festivals is one of my favorites hobbies.}
+
+\section{Talks}
+\cvitem{Barcelona developers conference (Jun 2012)}{Adaptive video streaming: reaching all devices and networks}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+\clearpage
+\end{document}
+%% end of file `template.tex'.
